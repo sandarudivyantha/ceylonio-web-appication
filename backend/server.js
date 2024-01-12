@@ -7,7 +7,7 @@ const app = express();
 
 dotenv.config();
 
-const mongoURI = process.env.MONGODB_URI;
+const mongoURI = process.env.mongoURI;
 // Establish MongoDB connection
 await mongoose.connect(mongoURI, {
     useNewUrlParser: true,
