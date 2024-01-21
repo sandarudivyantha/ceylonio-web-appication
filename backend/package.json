@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Welcome to Ceylonio, where luxury meets tranquility in the heart of paradise. The Backend",
   "main": "server.js",
-  "type": "module",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
@@ -11,11 +10,13 @@
   "author": "Sandaru & Viraj",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongoose": "^8.0.4",
-    "nodemon": "^3.0.2"
+    "nodemon": "^3.0.2",
+    "validator": "^13.11.0"
   }
 }
