@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 
 const adminRoutes = require("./routes/admin.routes");
-
+const foodRoutes = require("./routes/food.routes")
 const PORT = process.env.PORT || 4001;
 const app = express();
 app.use(cors());
@@ -35,6 +35,7 @@ mongoose
 
 // Routes
 app.use("/api/admins", adminRoutes);
+app.use("/api/foods", foodRoutes);
 
 app.get("/", (req, res) => {
   res.send("The Backend is started and running");
